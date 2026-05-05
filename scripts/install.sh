@@ -130,7 +130,7 @@ cat > "${DEST}/.env.local" <<EOF
 # $(date -u +"%Y-%m-%dT%H:%M:%SZ")
 VITE_SUPABASE_URL=${SUPABASE_URL}
 VITE_SUPABASE_PUBLISHABLE_KEY=${ANON_KEY}
-VITE_PUBLIC_SITE_URL=http://localhost:8080
+VITE_PUBLIC_SITE_URL=http://localhost:8784
 SUPABASE_PROJECT_ID=${PROJECT_REF}
 EOF
 
@@ -168,5 +168,5 @@ echo -e "  ${BOLD}Próximo passo:${RESET}"
 echo ""
 echo -e "  ${CYAN}npm run dev${RESET}"
 echo ""
-echo -e "  Acesse em: ${CYAN}http://localhost:8080${RESET}"
+echo -e "  Acesse em: ${CYAN}http://localhost:8784${RESET}"
 echo ""

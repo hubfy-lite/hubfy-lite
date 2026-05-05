@@ -1,4 +1,4 @@
-const DEFAULT_PUBLIC_SITE_URL = "http://localhost:8080";
+const DEFAULT_PUBLIC_SITE_URL = "http://localhost:8784";
 
 function normalizeBaseUrl(value: string | null | undefined): string | null {
   if (!value) return null;
