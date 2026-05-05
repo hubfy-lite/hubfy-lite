@@ -1,0 +1,34 @@
+import * as React from "react";
+import * as LabelPrimitive from "@radix-ui/react-label";
+
+import { cn } from "@/lib/utils";
+
+/**
+ * Label Component - shadcn/ui (adapted for Tailwind v3)
+ *
+ * Based on shadcn/ui new-york-v4 but compatible with Tailwind CSS v3
+ *
+ * Design System Notes:
+ * - Font size: text-sm
+ * - Font weight: font-medium
+ * - Supports disabled and invalid states via data attributes
+ */
+const Label = React.forwardRef<
+  React.ElementRef<typeof LabelPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root>
+>(({ className, ...props }, ref) => (
+  <LabelPrimitive.Root
+    ref={ref}
+    data-slot="label"
+    className={cn(
+      "flex items-center gap-2 text-sm font-medium leading-none text-foreground",
+      "select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50",
+      "peer-disabled:cursor-not-allowed peer-disabled:opacity-50",
+      className
+    )}
+    {...props}
+  />
+));
+Label.displayName = LabelPrimitive.Root.displayName;
+
+export { Label };

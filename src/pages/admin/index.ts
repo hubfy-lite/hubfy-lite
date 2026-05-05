@@ -1,0 +1,15 @@
+export { default as AdminDashboard } from "./AdminDashboard";
+export { default as AdminCourses } from "./AdminCourses";
+export { default as AdminCourseNew } from "./AdminCourseNew";
+export { default as AdminCourseStructure } from "./AdminCourseStructure";
+export { default as AdminModuleNew } from "./AdminModuleNew";
+export { default as AdminLessonNew } from "./AdminLessonNew";
+export { default as AdminCustomers } from "./AdminCustomers";
+export { default as AdminProducts } from "./AdminProducts";
+export { default as AdminOrders } from "./AdminOrders";
+export { default as AdminDesign } from "./AdminDesign";
+export { default as AdminSettings } from "./AdminSettings";
+export { default as AdminProfile } from "./AdminProfile";
+export { default as AdminNewWorkspace } from "./AdminNewWorkspace";
+export { default as AdminAssets } from "./AdminAssets";
+export { default as AdminShowcases } from "./AdminShowcases";

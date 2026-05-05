@@ -1,0 +1,121 @@
+project_id = ""
+
+[functions.setup-tenant]
+verify_jwt = false
+
+[functions.asset-upload-video]
+verify_jwt = false
+
+[functions.asset-upload-file]
+verify_jwt = false
+
+[functions.asset-confirm-upload]
+verify_jwt = false
+
+[functions.asset-webhook-hosting]
+verify_jwt = false
+
+[functions.asset-delete]
+verify_jwt = false
+
+[functions.hosting-poll-progress]
+verify_jwt = false
+
+[functions.sync-video-settings]
+verify_jwt = false
+
+[functions.subscribe-free]
+verify_jwt = false
+
+[functions.add-customer]
+verify_jwt = false
+
+[functions.resend-customer-invite]
+verify_jwt = false
+
+[functions.migrate-lesson-thumbnails]
+verify_jwt = false
+
+[functions.add-team-member]
+verify_jwt = false
+
+[functions.customer-auth-start]
+verify_jwt = false
+
+[functions.delete-workspace]
+verify_jwt = false
+
+[functions.hosting-enable-video-protection]
+verify_jwt = false
+
+[functions.hosting-video-token]
+verify_jwt = false
+
+[functions.process-checkout]
+verify_jwt = false
+
+[functions.reconcile-access]
+verify_jwt = false
+
+[functions.remove-team-member]
+verify_jwt = false
+
+[functions.resend-team-invite]
+verify_jwt = false
+
+[functions.auth-send-email]
+verify_jwt = false
+
+[functions.vimeo-connect]
+verify_jwt = false
+
+[functions.vimeo-disconnect]
+verify_jwt = false
+
+[functions.vimeo-list-videos]
+verify_jwt = false
+
+[functions.pandavideo-connect]
+verify_jwt = false
+
+[functions.pandavideo-disconnect]
+verify_jwt = false
+
+[functions.pandavideo-list-videos]
+verify_jwt = false
+
+[functions.wistia-connect]
+verify_jwt = false
+
+[functions.wistia-disconnect]
+verify_jwt = false
+
+[functions.wistia-list-videos]
+verify_jwt = false
+
+[functions.import-customers-csv]
+verify_jwt = false
+
+[functions.gateway-webhook]
+verify_jwt = false
+
+[functions.gateway-reprocess]
+verify_jwt = false
+
+[functions.gateway-connect]
+verify_jwt = false
+
+[functions.gateway-disconnect]
+verify_jwt = false
+
+[functions.gateway-sync]
+verify_jwt = false
+
+[functions.api-key-manage]
+verify_jwt = false
+
+[functions.creator-signup-start]
+verify_jwt = false
+
+[functions.api]
+verify_jwt = false

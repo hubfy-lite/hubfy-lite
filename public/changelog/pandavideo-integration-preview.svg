@@ -1,0 +1,136 @@
+<svg width="800" height="480" viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="roundedCard"><rect width="800" height="480" rx="12"/></clipPath>
+    <clipPath id="thumb1"><rect x="32" y="200" width="172" height="97" rx="8"/></clipPath>
+    <clipPath id="thumb2"><rect x="220" y="200" width="172" height="97" rx="8"/></clipPath>
+    <clipPath id="thumb3"><rect x="408" y="200" width="172" height="97" rx="8"/></clipPath>
+    <clipPath id="thumb4"><rect x="596" y="200" width="172" height="97" rx="8"/></clipPath>
+    <clipPath id="thumb5"><rect x="32" y="340" width="172" height="97" rx="8"/></clipPath>
+    <clipPath id="thumb6"><rect x="220" y="340" width="172" height="97" rx="8"/></clipPath>
+    <clipPath id="thumb7"><rect x="408" y="340" width="172" height="97" rx="8"/></clipPath>
+    <clipPath id="thumb8"><rect x="596" y="340" width="172" height="97" rx="8"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" rx="12" fill="#FFFFFF" clip-path="url(#roundedCard)"/>
+  <rect width="800" height="480" rx="12" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="32" y="36" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#111827">Lesson Video</text>
+  <text x="32" y="56" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#6B7280">Choose a video source for this lesson.</text>
+
+  <!-- Tabs background -->
+  <rect x="32" y="76" width="596" height="40" rx="8" fill="#F3F4F6"/>
+
+  <!-- Tab: Library -->
+  <rect x="36" y="80" width="78" height="32" rx="6" fill="transparent"/>
+  <text x="75" y="101" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#9CA3AF">Library</text>
+
+  <!-- Tab: YouTube -->
+  <rect x="118" y="80" width="80" height="32" rx="6" fill="transparent"/>
+  <text x="158" y="101" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#9CA3AF">YouTube</text>
+
+  <!-- Tab: Vimeo -->
+  <rect x="202" y="80" width="68" height="32" rx="6" fill="transparent"/>
+  <text x="236" y="101" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#9CA3AF">Vimeo</text>
+
+  <!-- Tab: Smart Player -->
+  <rect x="274" y="80" width="104" height="32" rx="6" fill="transparent"/>
+  <text x="326" y="101" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#9CA3AF">Smart Player</text>
+
+  <!-- Tab: Panda Video (ACTIVE) -->
+  <rect x="382" y="80" width="104" height="32" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="0.5"/>
+  <rect x="382" y="80" width="104" height="32" rx="6" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="434" y="101" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#111827">Panda Video</text>
+
+  <!-- Tab: Wistia -->
+  <rect x="490" y="80" width="68" height="32" rx="6" fill="transparent"/>
+  <text x="524" y="101" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#9CA3AF">Wistia</text>
+
+  <!-- Search bar -->
+  <rect x="32" y="132" width="736" height="40" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <!-- Search icon -->
+  <circle cx="52" cy="152" r="7" stroke="#9CA3AF" stroke-width="1.5" fill="none"/>
+  <line x1="57" y1="157" x2="61" y2="161" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="70" y="157" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#9CA3AF">Search Panda Video videos...</text>
+
+  <!-- Video Grid — Row 1 -->
+  <!-- Card 1 -->
+  <rect x="32" y="200" width="172" height="137" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="32" y="200" width="172" height="97" rx="8" fill="#1E293B" clip-path="url(#thumb1)"/>
+  <polygon points="108,240 108,258 123,249" fill="white" opacity="0.8"/>
+  <text x="160" y="290" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="white" text-anchor="end">
+    <tspan fill="#111827" opacity="0">.</tspan>
+  </text>
+  <!-- Duration badge -->
+  <rect x="164" y="275" width="34" height="16" rx="3" fill="rgba(0,0,0,0.7)"/>
+  <text x="181" y="286" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="white">4:32</text>
+  <rect x="32" y="297" width="172" height="40" rx="0 0 8 8" fill="#FFFFFF"/>
+  <text x="42" y="318" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#111827">Module 1 — Welcome</text>
+
+  <!-- Card 2 (selected - blue border) -->
+  <rect x="220" y="200" width="172" height="137" rx="8" fill="#FFFFFF" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="220" y="200" width="172" height="97" rx="8" fill="#374151" clip-path="url(#thumb2)"/>
+  <!-- Selected overlay -->
+  <rect x="220" y="200" width="172" height="97" rx="8" fill="#3B82F6" opacity="0.2" clip-path="url(#thumb2)"/>
+  <!-- Selected badge -->
+  <rect x="270" y="234" width="72" height="26" rx="13" fill="#3B82F6"/>
+  <text x="283" y="251" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="white">&#10003; Selected</text>
+  <rect x="220" y="297" width="172" height="40" rx="0 0 8 8" fill="#FFFFFF"/>
+  <text x="230" y="318" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#111827">Getting Started Guide</text>
+
+  <!-- Card 3 -->
+  <rect x="408" y="200" width="172" height="137" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="408" y="200" width="172" height="97" rx="8" fill="#1F2937" clip-path="url(#thumb3)"/>
+  <polygon points="484,240 484,258 499,249" fill="white" opacity="0.8"/>
+  <rect x="540" y="275" width="34" height="16" rx="3" fill="rgba(0,0,0,0.7)"/>
+  <text x="557" y="286" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="white">12:08</text>
+  <rect x="408" y="297" width="172" height="40" rx="0 0 8 8" fill="#FFFFFF"/>
+  <text x="418" y="318" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#111827">Advanced Techniques</text>
+
+  <!-- Card 4 -->
+  <rect x="596" y="200" width="172" height="137" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="596" y="200" width="172" height="97" rx="8" fill="#292524" clip-path="url(#thumb4)"/>
+  <polygon points="672,240 672,258 687,249" fill="white" opacity="0.8"/>
+  <rect x="728" y="275" width="34" height="16" rx="3" fill="rgba(0,0,0,0.7)"/>
+  <text x="745" y="286" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="white">8:45</text>
+  <rect x="596" y="297" width="172" height="40" rx="0 0 8 8" fill="#FFFFFF"/>
+  <text x="606" y="318" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#111827">Q&amp;A Session — Live</text>
+
+  <!-- Video Grid — Row 2 -->
+  <!-- Card 5 -->
+  <rect x="32" y="340" width="172" height="137" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="32" y="340" width="172" height="97" rx="8" fill="#1C1917" clip-path="url(#thumb5)"/>
+  <polygon points="108,380 108,398 123,389" fill="white" opacity="0.8"/>
+  <rect x="164" y="415" width="34" height="16" rx="3" fill="rgba(0,0,0,0.7)"/>
+  <text x="181" y="426" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="white">6:12</text>
+  <rect x="32" y="437" width="172" height="40" rx="0 0 8 8" fill="#FFFFFF"/>
+  <text x="42" y="458" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#111827">Bonus — Templates</text>
+
+  <!-- Card 6 -->
+  <rect x="220" y="340" width="172" height="137" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="220" y="340" width="172" height="97" rx="8" fill="#27272A" clip-path="url(#thumb6)"/>
+  <polygon points="296,380 296,398 311,389" fill="white" opacity="0.8"/>
+  <rect x="352" y="415" width="34" height="16" rx="3" fill="rgba(0,0,0,0.7)"/>
+  <text x="369" y="426" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="white">3:55</text>
+  <rect x="220" y="437" width="172" height="40" rx="0 0 8 8" fill="#FFFFFF"/>
+  <text x="230" y="458" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#111827">Case Study — Results</text>
+
+  <!-- Card 7 -->
+  <rect x="408" y="340" width="172" height="137" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="408" y="340" width="172" height="97" rx="8" fill="#1E1B4B" clip-path="url(#thumb7)"/>
+  <polygon points="484,380 484,398 499,389" fill="white" opacity="0.8"/>
+  <rect x="540" y="415" width="34" height="16" rx="3" fill="rgba(0,0,0,0.7)"/>
+  <text x="557" y="426" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="white">15:30</text>
+  <rect x="408" y="437" width="172" height="40" rx="0 0 8 8" fill="#FFFFFF"/>
+  <text x="418" y="458" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#111827">Workshop — Day 1</text>
+
+  <!-- Card 8 -->
+  <rect x="596" y="340" width="172" height="137" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="596" y="340" width="172" height="97" rx="8" fill="#312E81" clip-path="url(#thumb8)"/>
+  <polygon points="672,380 672,398 687,389" fill="white" opacity="0.8"/>
+  <rect x="728" y="415" width="34" height="16" rx="3" fill="rgba(0,0,0,0.7)"/>
+  <text x="745" y="426" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="white">9:18</text>
+  <rect x="596" y="437" width="172" height="40" rx="0 0 8 8" fill="#FFFFFF"/>
+  <text x="606" y="458" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#111827">Workshop — Day 2</text>
+</svg>

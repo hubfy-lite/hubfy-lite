@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+      text, tspan { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" rx="12" fill="#ffffff"/>
+
+  <!-- ── Sidebar ── -->
+  <rect x="0" y="0" width="272" height="720" rx="12 0 0 12" fill="#fafafa"/>
+  <line x1="272" y1="0" x2="272" y2="720" stroke="#e4e4e7" stroke-width="1"/>
+
+  <!-- Sidebar header: Hubfy logo + docs -->
+  <text x="24" y="40" font-size="17" font-weight="700" fill="#09090b">Hubfy</text>
+  <text x="76" y="40" font-size="13" font-weight="500" fill="#a1a1aa">docs</text>
+
+  <!-- Sidebar search -->
+  <rect x="16" y="56" width="240" height="32" rx="8" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+  <circle cx="32" cy="72" r="5" fill="none" stroke="#a1a1aa" stroke-width="1.2"/>
+  <line x1="35.5" y1="75.5" x2="38" y2="78" stroke="#a1a1aa" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="46" y="76" font-size="11" fill="#a1a1aa">Search docs...</text>
+
+  <!-- ── Sidebar group: Get Started ── -->
+  <text x="20" y="116" font-size="10" font-weight="600" fill="#a1a1aa" letter-spacing="0.05em">GET STARTED</text>
+
+  <!-- Active item -->
+  <rect x="12" y="124" width="248" height="32" rx="8" fill="#f4f4f5"/>
+  <text x="24" y="145" font-size="13" font-weight="500" fill="#09090b">Introduction</text>
+  <rect x="228" y="131" width="26" height="18" rx="9" fill="#22c55e" fill-opacity="0.15"/>
+  <text x="233" y="143" font-size="9" font-weight="600" fill="#16a34a">Live</text>
+
+  <text x="24" y="175" font-size="13" fill="#71717a">Quickstart</text>
+  <rect x="228" y="164" width="26" height="18" rx="9" fill="#22c55e" fill-opacity="0.15"/>
+  <text x="233" y="176" font-size="9" font-weight="600" fill="#16a34a">Live</text>
+
+  <text x="24" y="201" font-size="13" fill="#71717a">Plans &amp; Pricing</text>
+  <rect x="228" y="190" width="26" height="18" rx="9" fill="#22c55e" fill-opacity="0.15"/>
+  <text x="233" y="202" font-size="9" font-weight="600" fill="#16a34a">Live</text>
+
+  <!-- Separator -->
+  <line x1="16" y1="220" x2="256" y2="220" stroke="#e4e4e7" stroke-width="1"/>
+
+  <!-- ── Sidebar group: Your Workspace ── -->
+  <text x="20" y="244" font-size="10" font-weight="600" fill="#a1a1aa" letter-spacing="0.05em">YOUR WORKSPACE</text>
+
+  <text x="24" y="270" font-size="13" fill="#71717a">Overview</text>
+  <rect x="228" y="259" width="26" height="18" rx="9" fill="#22c55e" fill-opacity="0.15"/>
+  <text x="233" y="271" font-size="9" font-weight="600" fill="#16a34a">Live</text>
+
+  <text x="24" y="296" font-size="13" fill="#71717a">Design &amp; Branding</text>
+  <rect x="228" y="285" width="26" height="18" rx="9" fill="#22c55e" fill-opacity="0.15"/>
+  <text x="233" y="297" font-size="9" font-weight="600" fill="#16a34a">Live</text>
+
+  <text x="24" y="322" font-size="13" fill="#71717a">Team &amp; Roles</text>
+  <rect x="228" y="311" width="26" height="18" rx="9" fill="#22c55e" fill-opacity="0.15"/>
+  <text x="233" y="323" font-size="9" font-weight="600" fill="#16a34a">Live</text>
+
+  <!-- Separator -->
+  <line x1="16" y1="342" x2="256" y2="342" stroke="#e4e4e7" stroke-width="1"/>
+
+  <!-- ── Sidebar group: Products & Content ── -->
+  <text x="20" y="366" font-size="10" font-weight="600" fill="#a1a1aa" letter-spacing="0.05em">PRODUCTS &amp; CONTENT</text>
+
+  <text x="24" y="392" font-size="13" fill="#71717a">Courses</text>
+  <rect x="228" y="381" width="26" height="18" rx="9" fill="#22c55e" fill-opacity="0.15"/>
+  <text x="233" y="393" font-size="9" font-weight="600" fill="#16a34a">Live</text>
+
+  <text x="24" y="418" font-size="13" fill="#71717a">Downloads</text>
+  <rect x="228" y="407" width="26" height="18" rx="9" fill="#22c55e" fill-opacity="0.15"/>
+  <text x="233" y="419" font-size="9" font-weight="600" fill="#16a34a">Live</text>
+
+  <text x="24" y="444" font-size="13" fill="#71717a">Memberships</text>
+  <text x="24" y="470" font-size="13" fill="#71717a">Showcases</text>
+
+  <!-- Separator -->
+  <line x1="16" y1="490" x2="256" y2="490" stroke="#e4e4e7" stroke-width="1"/>
+
+  <!-- ── Sidebar group: Selling ── -->
+  <text x="20" y="514" font-size="10" font-weight="600" fill="#a1a1aa" letter-spacing="0.05em">SELLING</text>
+
+  <text x="24" y="540" font-size="13" fill="#71717a">Products</text>
+  <text x="24" y="566" font-size="13" fill="#71717a">Checkouts</text>
+  <text x="24" y="592" font-size="13" fill="#71717a">Payments</text>
+  <text x="24" y="618" font-size="13" fill="#71717a">Orders</text>
+
+  <!-- Separator -->
+  <line x1="16" y1="638" x2="256" y2="638" stroke="#e4e4e7" stroke-width="1"/>
+
+  <text x="20" y="662" font-size="10" font-weight="600" fill="#a1a1aa" letter-spacing="0.05em">CUSTOMERS</text>
+  <text x="24" y="688" font-size="13" fill="#71717a">Overview</text>
+
+  <!-- ── Main content area ── -->
+
+  <!-- Breadcrumb -->
+  <text x="304" y="40" font-size="12" fill="#3b82f6">Documentation</text>
+  <text x="382" y="40" font-size="12" fill="#a1a1aa">/</text>
+  <text x="394" y="40" font-size="12" fill="#71717a">Get Started</text>
+
+  <!-- Badge -->
+  <rect x="304" y="60" width="78" height="22" rx="11" fill="#f4f4f5"/>
+  <text x="318" y="75" font-size="11" font-weight="500" fill="#71717a">Get Started</text>
+
+  <!-- Page title -->
+  <text x="304" y="118" font-size="32" font-weight="600" fill="#09090b">Introduction</text>
+
+  <!-- Page description -->
+  <text x="304" y="148" font-size="15" fill="#71717a">Welcome to the Hubfy documentation. Learn how to set up</text>
+  <text x="304" y="168" font-size="15" fill="#71717a">your workspace, publish content, and start selling.</text>
+
+  <!-- ── Featured cards grid ── -->
+  <!-- Card 1 -->
+  <rect x="304" y="200" width="300" height="130" rx="10" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="324" y="220" width="44" height="44" rx="14" fill="#f4f4f5"/>
+  <!-- Rocket icon simplified -->
+  <text x="338" y="249" font-size="18" fill="#09090b">🚀</text>
+  <text x="324" y="288" font-size="14" font-weight="600" fill="#09090b">Quickstart</text>
+  <text x="324" y="308" font-size="12" fill="#a1a1aa">Get up and running in minutes</text>
+
+  <!-- Card 2 -->
+  <rect x="618" y="200" width="300" height="130" rx="10" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="638" y="220" width="44" height="44" rx="14" fill="#f4f4f5"/>
+  <text x="652" y="249" font-size="18" fill="#09090b">💳</text>
+  <text x="638" y="288" font-size="14" font-weight="600" fill="#09090b">Plans &amp; Pricing</text>
+  <text x="638" y="308" font-size="12" fill="#a1a1aa">Compare features and choose</text>
+
+  <!-- Card 3 -->
+  <rect x="932" y="200" width="300" height="130" rx="10" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="952" y="220" width="44" height="44" rx="14" fill="#f4f4f5"/>
+  <text x="966" y="249" font-size="18" fill="#09090b">🎓</text>
+  <text x="952" y="288" font-size="14" font-weight="600" fill="#09090b">Courses</text>
+  <text x="952" y="308" font-size="12" fill="#a1a1aa">Create and manage your courses</text>
+
+  <!-- ── Separator ── -->
+  <line x1="304" y1="358" x2="1240" y2="358" stroke="#f4f4f5" stroke-width="1"/>
+
+  <!-- ── Section: What you can build ── -->
+  <text x="304" y="396" font-size="22" font-weight="600" fill="#09090b">What you can build on Hubfy</text>
+  <text x="304" y="420" font-size="13" fill="#71717a">A single Hubfy workspace can cover the main parts of a modern digital business.</text>
+
+  <!-- Build list cards (2-column grid) -->
+  <rect x="304" y="440" width="456" height="48" rx="10" fill="#fafafa" stroke="#f4f4f5" stroke-width="1"/>
+  <text x="324" y="469" font-size="13" fill="#3f3f46">Online courses with video, files and downloads</text>
+
+  <rect x="776" y="440" width="456" height="48" rx="10" fill="#fafafa" stroke="#f4f4f5" stroke-width="1"/>
+  <text x="796" y="469" font-size="13" fill="#3f3f46">Membership and subscription portals</text>
+
+  <rect x="304" y="498" width="456" height="48" rx="10" fill="#fafafa" stroke="#f4f4f5" stroke-width="1"/>
+  <text x="324" y="527" font-size="13" fill="#3f3f46">Digital product showcases with checkout</text>
+
+  <rect x="776" y="498" width="456" height="48" rx="10" fill="#fafafa" stroke="#f4f4f5" stroke-width="1"/>
+  <text x="796" y="527" font-size="13" fill="#3f3f46">Customer base with access management</text>
+
+  <rect x="304" y="556" width="456" height="48" rx="10" fill="#fafafa" stroke="#f4f4f5" stroke-width="1"/>
+  <text x="324" y="585" font-size="13" fill="#3f3f46">Multi-gateway checkout and order tracking</text>
+
+  <rect x="776" y="556" width="456" height="48" rx="10" fill="#fafafa" stroke="#f4f4f5" stroke-width="1"/>
+  <text x="796" y="585" font-size="13" fill="#3f3f46">Email campaigns with audience segmentation</text>
+
+  <!-- ── Section: How Hubfy works ── -->
+  <line x1="304" y1="630" x2="1240" y2="630" stroke="#f4f4f5" stroke-width="1"/>
+  <text x="304" y="668" font-size="22" font-weight="600" fill="#09090b">How Hubfy works</text>
+  <text x="304" y="692" font-size="13" fill="#71717a">The platform flow is straightforward: set up your workspace, publish your content, connect monetization, and deliver access.</text>
+
+  <!-- ── Right sidebar: On this page ── -->
+  <line x1="1244" y1="60" x2="1244" y2="700" stroke="#f4f4f5" stroke-width="1"/>
+  <text x="1252" y="82" font-size="10" font-weight="600" fill="#a1a1aa" letter-spacing="0.05em">ON THIS PAGE</text>
+  <rect x="1248" y="94" width="2" height="16" rx="1" fill="#09090b"/>
+  <text x="1258" y="106" font-size="11" font-weight="500" fill="#09090b">Introduction</text>
+  <text x="1258" y="130" font-size="11" fill="#a1a1aa">What you can build</text>
+  <text x="1258" y="154" font-size="11" fill="#a1a1aa">How Hubfy works</text>
+</svg>

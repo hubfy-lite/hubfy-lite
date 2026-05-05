@@ -1,0 +1,371 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Self-hosted Geist font (eliminates Google Fonts CDN latency) ─── */
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Geist-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/Geist-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/Geist-SemiBold.woff2") format("woff2");
+}
+
+/* =============================================
+   HUBFY - DESIGN SYSTEM
+   TweakCN theme — HSL color space
+   ============================================= */
+
+@layer base {
+  :root {
+    /* TweakCN theme — HSL channels (H S% L%) for Tailwind v3 opacity support */
+    --background: 0 0% 100%;
+    --foreground: 223.8136 0.0000% 1.2920%;
+
+    --card: 223.8136 -172.5242% 100.0000%;
+    --card-foreground: 223.8136 0.0000% 1.2920%;
+
+    --popover: 223.8136 -172.5242% 100.0000%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 223.8136 0.0000% 8.6104%;
+    --primary-foreground: 223.8136 0.0003% 97.3691%;
+
+    --secondary: 223.8136 0.0001% 92.1478%;
+    --secondary-foreground: 223.8136 0.0000% 17.9236%;
+
+    --muted: 223.8136 0.0002% 96.0587%;
+    --muted-foreground: 223.8136 0.0000% 32.3067%;
+
+    --accent: 248 98% 61%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 358.8683 74.6580% 50.3424%;
+    --destructive-foreground: 213.7504 96.4852% 96.7906%;
+
+    --success: 160 50% 45%;
+    --success-foreground: 0 0% 100%;
+    --success-badge-bg: 142 76% 93%;
+    --success-badge-border: 142 71% 65%;
+    --success-badge-text: 142 76% 23%;
+
+    --warning: 45 80% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 223.8136 0.0001% 92%;
+    --input: 223.8136 0.0001% 92.1478%;
+    --ring: 223.8136 0.0000% 32.3067%;
+    --placeholder-foreground: 223.8136 0.0000% 50%;
+
+    --radius: 0.5rem;
+
+    --chart-1: 215.56 59.98% 83%;
+    --chart-2: 222.4034 59.0500% 75.0997%;
+    --chart-3: 229.0878 49.7479% 60.9807%;
+    --chart-4: 225.7181 51.8948% 50.4104%;
+    --chart-5: 236.5829 64.2250% 21.4383%;
+
+    --sidebar: 223.8136 -172.5242% 100.0000%;
+    --sidebar-foreground: 223.8136 0.0000% 12.2222%;
+    --sidebar-primary: 223.8136 0.0000% 1.2920%;
+    --sidebar-primary-foreground: 223.8136 -172.5242% 100.0000%;
+    --sidebar-accent: 223.8136 0.0002% 96.0587%;
+    --sidebar-accent-foreground: 223.8136 0.0000% 8.6104%;
+    --sidebar-border: 223.8136 0.0001% 89.5577%;
+    --sidebar-ring: 223.8136 0.0001% 89.5577%;
+
+    --shadow-2xs: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 62.0499% / 0.15);
+    --shadow-xs: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 62.0499% / 0.15);
+    --shadow-sm: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 62.0499% / 0.30), 0px 1px 2px -1.5px hsl(223.8136 0.0000% 62.0499% / 0.30);
+    --shadow: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 62.0499% / 0.30), 0px 1px 2px -1.5px hsl(223.8136 0.0000% 62.0499% / 0.30);
+    --shadow-md: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 62.0499% / 0.30), 0px 2px 4px -1.5px hsl(223.8136 0.0000% 62.0499% / 0.30);
+    --shadow-lg: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 62.0499% / 0.30), 0px 4px 6px -1.5px hsl(223.8136 0.0000% 62.0499% / 0.30);
+    --shadow-xl: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 62.0499% / 0.30), 0px 8px 10px -1.5px hsl(223.8136 0.0000% 62.0499% / 0.30);
+    --shadow-2xl: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 62.0499% / 0.75);
+
+    --tracking-normal: 0em;
+    --spacing: 0.25rem;
+  }
+
+  .dark {
+    --background: 223.8136 0.0000% 1.2920%;
+    --foreground: 223.8136 0.0005% 98.6829%;
+
+    --card: 223.8136 0.0000% 4.3484%;
+    --card-foreground: 223.8136 0.0001% 92.1478%;
+
+    --popover: 223.8136 0.0000% 3.9225%;
+    --popover-foreground: 223.8136 -172.5242% 100.0000%;
+
+    --primary: 223.8136 0.0001% 92.1478%;
+    --primary-foreground: 223.8136 0.0000% 1.2920%;
+
+    --secondary: 223.8136 0.0000% 13.1499%;
+    --secondary-foreground: 223.8136 0.0001% 92.1478%;
+
+    --muted: 223.8136 0.0000% 11.3040%;
+    --muted-foreground: 223.8136 0.0000% 64.4710%;
+
+    --accent: 248 98% 61%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 358.7594 101.8439% 69.8357%;
+    --destructive-foreground: 213.7504 96.4852% 96.7906%;
+
+    --success: 160 50% 45%;
+    --success-foreground: 0 0% 100%;
+    --success-badge-bg: 142 30% 8%;
+    --success-badge-border: 142 40% 30%;
+    --success-badge-text: 142 80% 70%;
+
+    --warning: 45 80% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 223.8136 0.0000% 14.0871%;
+    --input: 223.8136 0.0000% 19.8916%;
+    --ring: 223.8136 0.0000% 50.2111%;
+    --placeholder-foreground: 223.8136 0.0000% 48%;
+
+    --chart-1: 215.56 59.98% 83%;
+    --chart-2: 222.4034 59.0500% 75.0997%;
+    --chart-3: 229.0878 49.7479% 60.9807%;
+    --chart-4: 225.7181 51.8948% 50.4104%;
+    --chart-5: 236.5829 64.2250% 21.4383%;
+
+    --sidebar: 223.8136 0.0000% 5.1758%;
+    --sidebar-foreground: 223.8136 0.0001% 92.9405%;
+    --sidebar-primary: 223.8136 0.0002% 96.0587%;
+    --sidebar-primary-foreground: 223.8136 0.0001% 92.1478%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 223.8136 0.0000% 14.0871%;
+    --sidebar-ring: 223.8136 0.0000% 50.2111%;
+
+    --shadow-2xs: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 38.8573% / 0.15);
+    --shadow-xs: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 38.8573% / 0.15);
+    --shadow-sm: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 38.8573% / 0.30), 0px 1px 2px -1.5px hsl(223.8136 0.0000% 38.8573% / 0.30);
+    --shadow: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 38.8573% / 0.30), 0px 1px 2px -1.5px hsl(223.8136 0.0000% 38.8573% / 0.30);
+    --shadow-md: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 38.8573% / 0.30), 0px 2px 4px -1.5px hsl(223.8136 0.0000% 38.8573% / 0.30);
+    --shadow-lg: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 38.8573% / 0.30), 0px 4px 6px -1.5px hsl(223.8136 0.0000% 38.8573% / 0.30);
+    --shadow-xl: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 38.8573% / 0.30), 0px 8px 10px -1.5px hsl(223.8136 0.0000% 38.8573% / 0.30);
+    --shadow-2xl: 0px 0px 1px -0.5px hsl(223.8136 0.0000% 38.8573% / 0.75);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  /* Dark mode is set via class="dark" on <html> in index.html */
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Geist', system-ui, sans-serif;
+  }
+
+  /* Force sans-serif everywhere — kill monospace globally */
+  pre, code, kbd, samp {
+    font-family: 'Geist', system-ui, sans-serif !important;
+  }
+
+  .font-mono {
+    font-family: 'Geist', system-ui, sans-serif !important;
+  }
+
+  /* Typography scale - no letter-spacing */
+  h1 {
+    @apply text-2xl font-semibold tracking-normal;
+  }
+
+  h2 {
+    @apply text-lg font-semibold tracking-normal;
+  }
+
+  h3 {
+    @apply text-sm font-semibold tracking-normal;
+  }
+
+  h4 {
+    @apply text-xs font-medium tracking-normal;
+  }
+
+  /* Reserve scrollbar space to prevent layout shift when dialogs/sheets open */
+  html {
+    scrollbar-gutter: stable;
+  }
+
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Text hierarchy utilities - no letter-spacing */
+  .text-title {
+    @apply text-2xl font-semibold text-foreground tracking-normal;
+  }
+
+  .text-section {
+    @apply text-lg font-semibold text-foreground tracking-normal;
+  }
+
+  .text-body {
+    @apply text-sm text-foreground;
+  }
+
+  .text-label {
+    @apply text-xs font-semibold text-muted-foreground;
+  }
+
+  .text-support {
+    @apply text-xs text-muted-foreground;
+  }
+
+  .text-meta {
+    @apply text-[10px] text-muted-foreground/70;
+  }
+
+  /* Card utilities - borderless on dark bg */
+  .card-container {
+    @apply rounded-2xl bg-card p-6;
+  }
+
+  .card-container-sm {
+    @apply rounded-2xl bg-card p-4;
+  }
+
+  /* Gradient utilities */
+  .gradient-primary {
+    @apply bg-gradient-to-r from-primary to-primary/70;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent;
+  }
+
+  /* Glow effects */
+  .glow-primary {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+
+  .glow-primary-lg {
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.4);
+  }
+
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.2s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.2s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.15s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { 
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Tiptap Editor Styles */
+  .ProseMirror {
+    outline: none;
+  }
+
+  .ProseMirror p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    float: left;
+    color: hsl(var(--muted-foreground));
+    pointer-events: none;
+    height: 0;
+  }
+
+  .ProseMirror h1 {
+    @apply text-2xl font-semibold mb-4 mt-6;
+  }
+
+  .ProseMirror h2 {
+    @apply text-xl font-semibold mb-3 mt-5;
+  }
+
+  .ProseMirror h3 {
+    @apply text-lg font-semibold mb-2 mt-4;
+  }
+
+  .ProseMirror p {
+    @apply mb-3;
+  }
+
+  .ProseMirror ul {
+    @apply list-disc list-inside mb-3 space-y-1;
+  }
+
+  .ProseMirror ol {
+    @apply list-decimal list-inside mb-3 space-y-1;
+  }
+
+  .ProseMirror blockquote {
+    @apply border-l-4 border-primary pl-4 italic my-4 text-muted-foreground;
+  }
+
+  .ProseMirror hr {
+    @apply border-border my-6;
+  }
+
+  .ProseMirror code {
+    @apply bg-muted px-1.5 py-0.5 rounded text-sm;
+  }
+
+  .ProseMirror pre {
+    @apply bg-muted p-4 rounded-lg my-4 overflow-x-auto;
+  }
+
+  .ProseMirror pre code {
+    @apply bg-transparent p-0;
+  }
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BRANDING: altere o título e descrição da sua plataforma aqui -->
+    <title>Hubfy</title>
+    <meta name="description" content="Hubfy — Cursos que geram resultados" />
+    <!-- /BRANDING -->
+
+    <!-- Geist font — self-hosted, preload critical weight only -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/Geist-Regular.woff2" crossorigin />
+
+    <script>
+      // Aplica tema ANTES de qualquer CSS/React renderizar para evitar flash.
+      (function() {
+        var STORAGE_KEY = 'hubfy.language';
+
+        function resolveLanguage(raw) {
+          if (!raw) return 'pt-BR';
+          var normalized = String(raw).toLowerCase();
+          if (normalized === 'en' || normalized.indexOf('en-') === 0) return 'en';
+          if (normalized === 'es' || normalized.indexOf('es-') === 0) return 'es';
+          return 'pt-BR';
+        }
+
+        try {
+          if (localStorage.getItem('hubfy.theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+          }
+        } catch(e) {}
+
+        try {
+          var storedLanguage = localStorage.getItem(STORAGE_KEY);
+          document.documentElement.lang = resolveLanguage(storedLanguage || navigator.language);
+        } catch(e) {
+          document.documentElement.lang = 'pt-BR';
+        }
+      })();
+    </script>
+
+    <!-- BRANDING: substitua os arquivos /public/brand/favicon-dark.svg e favicon-light.svg pelo seu favicon -->
+    <link rel="icon" type="image/svg+xml" href="/brand/favicon-dark.svg" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="/brand/favicon-light.svg" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/svg+xml" href="/brand/favicon-dark.svg" />
+    <!-- /BRANDING -->
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
